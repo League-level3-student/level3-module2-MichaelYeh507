@@ -31,7 +31,15 @@ class _01_SwappingDigits {
 	//   Iterate through the array and when you find two elements that are out
 	//   of order, swap them. Repeat this until the array is in order.
 	public static void sortIntArray(int[] arr) {
-		
+		for (int j = 0; j < arr.length; j++) {
+			for (int i = j + 1; i < arr.length; i++) {
+				if (arr[j] > arr[i]) {
+					int placeHolder = arr[i];
+					arr[i] = arr[j];
+					arr[j] = placeHolder;
+				}
+			}
+		}
 	}
 	
 	//3. Complete the method so that it finds the middle number in the array.
