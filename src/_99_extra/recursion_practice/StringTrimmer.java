@@ -21,7 +21,7 @@ public class StringTrimmer {
 	
 	public static void main(String[] args) {
 		assertEquals("Hello W", trimString("Hello World!", 5));
-		assertEquals("League", trimString("LeagueOfAmazing!", 10));
+		assertEquals("Leauge", trimString("LeagueOfAmazing!", 10));
 		assertEquals("James", trimString("JamesTheIntern", 9));
 		assertEquals("", trimString("TheWholeWord", 12));
 	}
